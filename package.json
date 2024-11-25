@@ -5,10 +5,11 @@
   "keywords": [],
   "main": "src/index.tsx",
   "dependencies": {
+    "openseadragon": "5.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-scripts": "^5.0.0",
-    "openseadragon": "5.0.0"
+    "react-router-dom": "6.28",
+    "react-scripts": "^5.0.0"
   },
   "devDependencies": {
     "@types/react": "18.2.38",

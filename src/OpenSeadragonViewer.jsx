@@ -142,13 +142,15 @@ const OpenSeadragonViewer = ({ tileSource, viewPortName }) => {
       !syncStateRef.current ||
       viewPortName == focusedViewPortRef.current
     ) {
-      lastStateViewPorts.current = {
-        ...lastStateViewPorts.current,
-        [viewPortName]: {
-          pan: osdViewer.current.viewport.getCenter(),
-          zoom: osdViewer.current.viewport.getZoom(),
-        },
-      };
+      setTimeout(() => {
+        lastStateViewPorts.current = {
+          ...lastStateViewPorts.current,
+          [viewPortName]: {
+            pan: osdViewer.current.viewport.getCenter(),
+            zoom: osdViewer.current.viewport.getZoom(),
+          },
+        };
+      }, 10);
     }
   }, [pan]);
 
