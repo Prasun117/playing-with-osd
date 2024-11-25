@@ -11,6 +11,7 @@ const SyncButton = () => {
         onClick={() => {
           setIsSyncOn(!syncStateRef.current);
           syncStateRef.current = !syncStateRef.current;
+          setSyncState(!syncState);
         }}
       >
         Sync {isSyncOn ? "on" : "off"}

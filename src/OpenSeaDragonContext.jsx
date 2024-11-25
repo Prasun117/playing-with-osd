@@ -15,6 +15,7 @@ const OpenSeaDragonProvider = ({ children }) => {
   const syncStateRef = useRef(false);
   const [zoom, setZoom] = useState(1);
   const [pan, setPan] = useState(new OpenSeadragon.Point(0.5, 0.5));
+  const viewportNames = ['viewport']
 
   console.log("focusedViewPort", focusedViewPort);
   return (
